@@ -1,21 +1,25 @@
-📸 Turkish License Plate Detection & Recognition
+# 📸 Turkish License Plate Detection & Recognition  
 
-YOLOv8 tabanlı plaka tespit sistemi ve Tesseract OCR tabanlı plaka okuma sistemi.
-Bu proje ile görüntü veya video akışı üzerinden araç plakaları tespit edilir, plaka bölgesi otomatik kırpılır ve OCR ile metin haline dönüştürülür.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python)](https://www.python.org/)  
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Detection-orange.svg?logo=ultralytics)](https://github.com/ultralytics/ultralytics)  
+[![OCR](https://img.shields.io/badge/OCR-Tesseract-green.svg?logo=google)](https://github.com/tesseract-ocr/tesseract)  
 
-🚀 Özellikler
+YOLOv8 tabanlı **plaka tespit sistemi** ve Tesseract OCR tabanlı **plaka okuma sistemi**.  
+Görüntü veya video akışı üzerinden araç plakaları tespit edilir, plaka bölgesi kırpılır ve OCR ile metne dönüştürülür.  
 
-🔍 Plaka Tespiti – YOLOv8 ile eğitilmiş özel model (best.pt)
+---
 
-✂️ Otomatik Crop – Tespit edilen plaka bölgesi otomatik kesilir
+## 🚀 Özellikler
+- 🔍 **Plaka Tespiti** – YOLOv8 ile eğitilmiş özel model (`best.pt`)  
+- ✂️ **Otomatik Crop** – Tespit edilen plaka bölgesi otomatik kırpılır  
+- 📝 **Plaka Okuma** – Pytesseract OCR ile metin çıkarılır  
+- 💻 **Donanım Desteği** – CPU üzerinde çalışabilir, GPU opsiyonel  
+- 📂 **Çıktı Yönetimi** – Sonuçlar `runs/outputs/` klasörüne kaydedilir  
 
-📝 Plaka Okuma – Pytesseract OCR ile yazıya dökülür
+---
 
-💻 Donanım Desteği – CPU üzerinde çalışabilir, GPU opsiyonel
-
-📂 Çıktı Yönetimi – Sonuçlar runs/outputs/ klasörüne kaydedilir
-
-📂 Proje Yapısı
+## 📂 Proje Yapısı
+```bash
 Vision-Based.../
 │── plate-detection-system/
 │   ├── detect.py          # Ana çalışma dosyası
@@ -63,8 +67,10 @@ Girdi: Araç resmi
 
 🏋️‍♂️ Model Eğitimi
 
-Bu model, Kaggle’daki Turkish License Plate Dataset
- verisinin ilk 1500 görseli ile eğitilmiştir.
+Bu model, Kaggle’daki
+Turkish License Plate Dataset
+
+verisinin ilk 1500 görseli ile eğitilmiştir.
 
 📌 Gereksinimler
 
