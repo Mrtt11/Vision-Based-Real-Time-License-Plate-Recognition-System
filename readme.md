@@ -28,6 +28,7 @@ Vision-Based.../
 │── test_images/           # Test için örnek görseller
 │── requirements.txt
 │── README.md
+```
 
 🔧 Kurulum
 
